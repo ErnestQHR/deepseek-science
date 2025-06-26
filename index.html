@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>揭秘AI语言专家：DeepSeek原理科普</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>DeepSeek科普</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#principles" class="nav-link">原理</a></li>
+                <li><a href="#applications" class="nav-link">应用</a></li>
+                <li><a href="#qa" class="nav-link">问答</a></li>
+                <li><a href="#science" class="nav-link">科学</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h1 class="hero-title">揭秘AI语言专家</h1>
+                <h2 class="hero-subtitle">DeepSeek原理科普</h2>
+                <p class="hero-description">
+                    通过通俗易懂的方式，带你了解大语言模型DeepSeek的工作原理与应用场景。
+                    让AI技术不再神秘，让每个人都能理解人工智能的奥秘。
+                </p>
+                <button class="cta-button" onclick="scrollToSection('principles')">
+                    <i class="fas fa-rocket"></i>
+                    开始探索
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 原理介绍 -->
+    <section id="principles" class="section">
+        <div class="container">
+            <h2 class="section-title">三大核心原理</h2>
+            <div class="principles-container">
+                <div class="principle-tabs">
+                    <button class="tab-button active" data-tab="pretrain">
+                        <i class="fas fa-graduation-cap"></i>
+                        预训练
+                    </button>
+                    <button class="tab-button" data-tab="finetune">
+                        <i class="fas fa-cogs"></i>
+                        微调
+                    </button>
+                    <button class="tab-button" data-tab="generate">
+                        <i class="fas fa-magic"></i>
+                        生成
+                    </button>
+                </div>
+                
+                <div class="principle-content">
+                    <div class="tab-content active" id="pretrain">
+                        <div class="content-left">
+                            <div class="animation-container">
+                                <div class="brain-animation">
+                                    <div class="neuron"></div>
+                                    <div class="neuron"></div>
+                                    <div class="neuron"></div>
+                                    <div class="connection"></div>
+                                    <div class="connection"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <h3>预训练 - 海量数据学习</h3>
+                            <p>就像人类从小学习语言一样，DeepSeek通过阅读互联网上的海量文本数据来学习语言规律。这个过程就像给AI"大脑"灌输知识，让它理解词汇、语法、语义等基本概念。</p>
+                            <div class="analogy">
+                                <strong>类比理解：</strong>就像婴儿学习说话，通过听大人说话来理解语言规则
+                            </div>
+                            <div class="summary">
+                                <i class="fas fa-lightbulb"></i>
+                                预训练是AI学习语言基础的关键阶段
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="finetune">
+                        <div class="content-left">
+                            <div class="animation-container">
+                                <div class="tuning-animation">
+                                    <div class="gear"></div>
+                                    <div class="gear"></div>
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <h3>微调 - 专业化训练</h3>
+                            <p>在预训练的基础上，DeepSeek会针对特定任务进行精细化调整。比如让它更擅长编程、写作或回答问题。这个过程就像给一个通才进行专业培训。</p>
+                            <div class="analogy">
+                                <strong>类比理解：</strong>就像大学毕业生参加职业培训，学习特定技能
+                            </div>
+                            <div class="summary">
+                                <i class="fas fa-lightbulb"></i>
+                                微调让AI在特定领域表现更出色
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="generate">
+                        <div class="content-left">
+                            <div class="animation-container">
+                                <div class="generation-animation">
+                                    <div class="text-bubble"></div>
+                                    <div class="text-bubble"></div>
+                                    <div class="text-bubble"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <h3>生成 - 智能输出</h3>
+                            <p>当用户提问时，DeepSeek会根据学到的知识，预测下一个最合适的词汇，逐步生成完整的回答。这个过程就像人类思考后组织语言回答问题的过程。</p>
+                            <div class="analogy">
+                                <strong>类比理解：</strong>就像人类根据经验和知识组织语言回答问题
+                            </div>
+                            <div class="summary">
+                                <i class="fas fa-lightbulb"></i>
+                                生成是AI将学习成果转化为有用回答的过程
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 应用场景 -->
+    <section id="applications" class="section">
+        <div class="container">
+            <h2 class="section-title">应用场景展示</h2>
+            <div class="applications-grid">
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>智能写作</h3>
+                    <p>帮助用户创作文章、诗歌、故事等各类文本内容，提供写作灵感和建议。</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>编程助手</h3>
+                    <p>协助程序员编写代码、调试程序、解释算法，提高开发效率。</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>语言翻译</h3>
+                    <p>提供多语言之间的翻译服务，理解上下文语境，生成自然流畅的译文。</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>智能问答</h3>
+                    <p>回答各类问题，提供知识科普、学习辅导、生活建议等服务。</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>数据分析</h3>
+                    <p>分析复杂数据，生成报告，提供数据洞察和可视化建议。</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>创意激发</h3>
+                    <p>提供创意想法、设计方案、营销策略等创新性建议。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模拟问答 -->
+    <section id="qa" class="section">
+        <div class="container">
+            <h2 class="section-title">模拟问答互动</h2>
+            <div class="qa-container">
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                你好！我是DeepSeek，有什么可以帮助你的吗？
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-container">
+                        <input type="text" id="chatInput" placeholder="输入你的问题..." maxlength="100">
+                        <button id="sendButton">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="qa-suggestions">
+                    <h3>试试这些问题：</h3>
+                    <div class="suggestion-buttons">
+                        <button class="suggestion-btn" data-question="什么是人工智能？">什么是人工智能？</button>
+                        <button class="suggestion-btn" data-question="如何学习编程？">如何学习编程？</button>
+                        <button class="suggestion-btn" data-question="写一首关于春天的诗">写一首关于春天的诗</button>
+                        <button class="suggestion-btn" data-question="解释量子计算">解释量子计算</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 科学原理 -->
+    <section id="science" class="section">
+        <div class="container">
+            <h2 class="section-title">科学原理详解</h2>
+            <div class="science-grid">
+                <div class="science-card">
+                    <div class="science-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>自然语言处理 (NLP)</h3>
+                    <p>NLP是让计算机理解、解释和生成人类语言的技术。DeepSeek通过NLP技术来理解用户输入，分析语义，并生成相应的回答。</p>
+                    <div class="science-details">
+                        <ul>
+                            <li>文本预处理</li>
+                            <li>词向量表示</li>
+                            <li>语义理解</li>
+                            <li>语言生成</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="science-card">
+                    <div class="science-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>深度学习</h3>
+                    <p>深度学习使用多层神经网络来模拟人脑的学习过程。DeepSeek基于Transformer架构，通过注意力机制来处理长文本序列。</p>
+                    <div class="science-details">
+                        <ul>
+                            <li>神经网络</li>
+                            <li>反向传播</li>
+                            <li>注意力机制</li>
+                            <li>梯度下降</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="science-card">
+                    <div class="science-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>语言模型预测</h3>
+                    <p>语言模型通过分析上下文来预测下一个最可能的词汇。DeepSeek使用概率分布来选择最合适的回答，确保输出的连贯性和准确性。</p>
+                    <div class="science-details">
+                        <ul>
+                            <li>概率预测</li>
+                            <li>上下文理解</li>
+                            <li>序列生成</li>
+                            <li>温度采样</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于页面 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">关于项目</h2>
+            <div class="about-content">
+                <div class="about-section">
+                    <h3><i class="fas fa-users"></i> 作者团队</h3>
+                    <p>本项目由仇皓然等团队成员开发，致力于让AI技术更加普及和易懂。</p>
+                </div>
+                
+                <div class="about-section">
+                    <h3><i class="fas fa-tools"></i> 使用工具</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-code"></i>
+                            <span>Cursor</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-robot"></i>
+                            <span>ChatGPT</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-brain"></i>
+                            <span>DeepSeek</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-section">
+                    <h3><i class="fas fa-layer-group"></i> 技术栈</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">响应式设计</span>
+                        <span class="tech-tag">CSS动画</span>
+                    </div>
+                </div>
+                
+                <div class="about-section">
+                    <h3><i class="fas fa-robot"></i> AI协作说明</h3>
+                    <p>本项目的开发过程中得到了AI工具的协助，包括代码编写、设计建议和内容优化。AI作为协作工具，帮助提高了开发效率，但项目的创意和决策仍由人类团队主导。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 DeepSeek科普平台. 让AI技术更易懂，让知识更普及.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
