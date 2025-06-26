@@ -139,7 +139,7 @@ git push -u origin main
 
 ## 👥 开发团队
 
-- **作者**: [仇皓然 (ErnestQHR)](https://github.com/ErnestQHR)
+- **作者**: DeepSeek科普团队
 - **AI协作**: ChatGPT, DeepSeek
 - **开发工具**: Cursor, Figma
 
